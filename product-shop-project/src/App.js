@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Views/Home/Home';
 import About from './Views/About/About';
 import Product from './Views/Product/Product';
+import ExampleCounter from './Views/Home/Components/ExampleCounter';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               path="/product/:id"
               component={() => <Product />}
             ></Route>
+            <Route exact path="/example" component={() => <ExampleCounter />}></Route>
           </Switch>
         </div>
         <Footer />
